@@ -11,8 +11,6 @@ import ImageSliderInner from './sections/ImageSliderInner.vue'
 import ImageSelector from './sections/ImageSelector.vue'
 import Table from './sections/Table.vue'
 import SeletionForComparison from './sections/SeletionForComparison.vue'
-import Model3D from './sections/Model3D.vue'
-import GaussianSplats3D from './sections/GaussianSplats3D.vue'
 
 export default {
   components: {
@@ -28,8 +26,6 @@ export default {
     ImageSelector,
     Table,
     SeletionForComparison,
-    Model3D,
-    GaussianSplats3D
   }
 }
 </script>
@@ -42,8 +38,6 @@ export default {
   <Table/>
   <Bench/>
   <MazeVariations/>
-  <Model3D/>
-  <GaussianSplats3D/>
   <SeletionForComparison/>
   <ImageSliderInner/>
   <ImageSlider/>
