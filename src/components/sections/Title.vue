@@ -105,6 +105,7 @@ const buttons = [
   {
     disabled: false,
     name: 'Dataset',
+    link: 'https://huggingface.co/datasets/amagipeng/VR-Bench',
     component: DataAnalysis,
   },
   {

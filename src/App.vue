@@ -14,9 +14,17 @@ export default {
 
 <template>
   <div>
+    <div class="top-banner">
+      Everyone is chasing the hype of video reasoning, but no one is building an objective,
+      solid, and usable evaluation benchmark.
+    </div>
     <el-container>
       <el-main><Main/></el-main>
     </el-container>
+
+    <div class="top-banner">
+      For any question, feel free to contact iamyangcheng7@gmail.com or alexanderwu@fuzhi.ai.
+    </div>
     
     <!-- 回到顶部 -->
     <el-backtop :right="40" :bottom="80" />
@@ -144,6 +152,18 @@ th, td {
 .katex-display {
   overflow-x: auto;
   overflow-y: hidden;
+}
+
+.top-banner {
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 18px 24px;
+  font-family: "MyFont", Verdana, sans-serif;
+  letter-spacing: 2px;
+  font-size: 22px;
+  line-height: 1.8;
 }
 
 </style>
