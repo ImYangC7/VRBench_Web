@@ -13,12 +13,12 @@ const models = [
   { id: 'sora-2', name: 'Sora 2', file: 'sora-2.mp4' },
   { id: 'veo3_1', name: 'Veo 3.1', file: 'veo3_1.mp4' },
   { id: 'veo3_1-pro', name: 'Veo 3.1 Pro', file: 'veo3_1-pro.mp4' },
-  { id: 'kling-v1', name: 'Kling 2.1', file: 'kling-v1.mp4' },
+  { id: 'kling-v1', name: 'Kling-v1', file: 'kling-v1.mp4' },
   { id: 'wan2.2', name: 'Wan2.2', file: 'wan2.2_baseline.mp4' },
   { id: 'wan2.1', name: 'Wan2.5', file: 'wan2.5.mp4' },
   { id: 'wan-r1', name: 'Wan R1', file: 'wanr1.mp4' },
-  { id: 'hunyuan', name: 'HunyuanVideo', file: 'doubao-seedance-1-0-pro-250528.mp4' },
-  { id: 'cogvideo', name: 'MiniMax', file: 'MiniMax-Hailuo-2_3.mp4' }
+  { id: 'hunyuan', name: 'Seedance-1.0-Pro', file: 'doubao-seedance-1-0-pro-250528.mp4' },
+  { id: 'cogvideo', name: 'MiniMax-Hailuo-2.3', file: 'MiniMax-Hailuo-2_3.mp4' }
 ]
 
 const difficulties = ['easy', 'medium', 'hard']
@@ -200,8 +200,9 @@ const setTaskDifficulty = (taskId, difficulty) => {
 
 .model-name {
   padding: 12px 14px;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 600;
+  font-style: italic;
   color: #1d1d1f;
   text-align: center;
   background: #fafafa;
@@ -275,4 +276,3 @@ const setTaskDifficulty = (taskId, difficulty) => {
 }
 
 </style>
-

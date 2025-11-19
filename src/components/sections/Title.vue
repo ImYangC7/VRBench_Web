@@ -1,6 +1,14 @@
 <script lang="ts" setup>
+import { h } from 'vue'
 import { ElIcon } from 'element-plus'
 import { Document, Files, DataAnalysis } from '@element-plus/icons-vue'
+
+// Hugging Face emoji icon for Model button
+const HfIcon = {
+  render() {
+    return h('span', { style: 'font-size: 18px; font-style: normal;' }, '🤗')
+  },
+}
 
 // Logo path (set to '' to hide)
 const logo = '/VRBench_Web/logo.png'
@@ -18,17 +26,47 @@ const btnColor = '#444444'
 
 // Authors (name, homepage, affiliation flags)
 const authors = [
-  { name: 'Cheng Yang', icon: '', homepage: '', addressFlag: '1' },
-  { name: 'Haiyuan Wan', icon: '', homepage: '', addressFlag: '2,3' },
-  { name: 'Yiran Peng', icon: '', homepage: '', addressFlag: '1' },
+  {
+    name: 'Cheng Yang',
+    icon: '',
+    homepage: 'https://scholar.google.com/citations?user=y7xaiIgAAAAJ&hl=en',
+    addressFlag: '1*',
+  },
+  {
+    name: 'Haiyuan Wan',
+    icon: '',
+    homepage: '',
+    addressFlag: '2,3*',
+  },
+  {
+    name: 'Yiran Peng',
+    icon: '',
+    homepage: '',
+    addressFlag: '1*',
+  },
   { name: 'Xin Cheng', icon: '', homepage: '', addressFlag: '4' },
   { name: 'Zhaoyang Yu', icon: '', homepage: '', addressFlag: '1' },
   { name: 'Jiayi Zhang', icon: '', homepage: '', addressFlag: '1,8' },
-  { name: 'Junchi Yu', icon: '', homepage: '', addressFlag: '5*' },
+  {
+    name: 'Junchi Yu',
+    icon: '',
+    homepage: 'https://scholar.google.com.hk/citations?user=gg8DmokAAAAJ&hl=en',
+    addressFlag: '5\u2020',
+  },
   { name: 'Xinlei Yu', icon: '', homepage: '', addressFlag: '6' },
-  { name: 'Xiawu Zheng', icon: '', homepage: '', addressFlag: '7' },
+  {
+    name: 'Xiawu Zheng',
+    icon: '',
+    homepage: 'https://scholar.google.com/citations?user=jBgXocYAAAAJ&hl=zh-CN',
+    addressFlag: '7',
+  },
   { name: 'Dongzhan Zhou', icon: '', homepage: '', addressFlag: '3' },
-  { name: 'Chenglin Wu', icon: '', homepage: '', addressFlag: '1\u2020' },
+  {
+    name: 'Chenglin Wu',
+    icon: '',
+    homepage: 'https://scholar.google.com/citations?user=nYIj020AAAAJ&hl=zh-CN',
+    addressFlag: '1\u2020',
+  },
 ]
 
 // Affiliations
@@ -48,9 +86,9 @@ const addresses = [
   },
 ]
 
-// Equal contribution and corresponding author note
+// Author note
 const conAndCorresponding =
-  '# Equal Contribution. * Corresponding Author.'
+  '* Core Contributor. \u2020 Corresponding Author.'
 
 // Emphasis lines (empty for now, no extra block)
 const emphases: string[] = []
@@ -58,7 +96,6 @@ const emphases: string[] = []
 // Resource buttons
 const buttons = [
   { disabled: true, name: 'Paper', component: Document },
-  { disabled: true, name: 'Chinese Version', component: Document },
   {
     disabled: false,
     name: 'Code',
@@ -69,6 +106,12 @@ const buttons = [
     disabled: false,
     name: 'Dataset',
     component: DataAnalysis,
+  },
+  {
+    disabled: false,
+    name: 'Model',
+    link: 'https://huggingface.co/datasets/HY-Wan/VR-Bench/tree/main',
+    component: HfIcon,
   },
 ]
 </script>
