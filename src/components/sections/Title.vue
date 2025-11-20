@@ -111,7 +111,7 @@ const buttons = [
   {
     disabled: false,
     name: 'Model',
-    link: 'https://huggingface.co/datasets/HY-Wan/VR-Bench/tree/main',
+    link: 'https://huggingface.co/HY-Wan/Wan-R1',
     component: HfIcon,
   },
 ]
