@@ -15,7 +15,7 @@ export default {
 <template>
   <div>
     <div class="top-banner">
-      Everyone is chasing the hype of video reasoning, but no one is building an objective,
+      Everyone is chasing the hype of video reasoning, but we are building an objective,
       solid, and usable evaluation benchmark.
     </div>
     <el-container>
