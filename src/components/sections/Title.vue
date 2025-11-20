@@ -95,7 +95,7 @@ const emphases: string[] = []
 
 // Resource buttons
 const buttons = [
-  { disabled: true, name: 'Paper', component: Document },
+  { disabled: true, name: 'Paper', link: 'https://arxiv.org/abs/2511.15065', component: Document },
   {
     disabled: false,
     name: 'Code',

@@ -3,11 +3,11 @@ export default {
   data() {
     return {
       bibtex: [
-        '@article{junyaohu2023template,',
-        '    title={Academic Project Page Template Vue},',
-        '    author={Hu, Junyao},',
-        '    journal={GitHub},',
-        '    year={2023}',
+        "@article{yang2025vrbench,",
+        "      title={Reasoning via Video: The First Evaluation of Video Models' Reasoning Abilities through Maze-Solving Tasks},",
+        "      author={Cheng Yang and Haiyuan Wan and Yiran Peng and Xin Cheng and Zhaoyang Yu and Jiayi Zhang and Junchi Yu and Xinlei Yu and Xiawu Zheng and Dongzhan Zhou and Chenglin Wu},",
+        "      journal={arXiv preprint arXiv:2511.15065},",
+        "      year={2025}",
         '}',
       ],
     }
